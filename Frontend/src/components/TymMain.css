@@ -1,0 +1,76 @@
+main .tym {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding: 0px 250px 50px 250px;
+}
+main .tym article {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+main .tym .tymitem{
+
+    text-align: center;
+    border-radius: 15px;
+    max-width:410px;
+    height: 550px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 8px rgb(99, 99, 99);   
+}
+main .tym article img{
+    max-width:100%;
+    border-radius: 15px 15px 0 0;
+}
+main .tym article p, main .tym article h2, main .tym article h3 {
+    padding:0 20px 20px 20px;
+}
+main .tym article p{
+    margin-top:0;
+}
+main .tym article h2{
+    font-weight:400;
+    font-size:36px;
+    margin:0;
+    padding: 10px 0 5px 0;
+}
+main .tym article h3 {
+    font-size:16px;
+    margin:0;
+}
+@media(width < 1450px){
+    main .tym{
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .tym .tymitem{
+        max-width:360px;
+        height: 500px;
+    }
+}
+@media(width < 1200px){
+    main .tym{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main .tym .tymitem{
+        max-width:310px;
+        height: 500px;
+    }
+}
+@media(width < 992px){
+    main .tym{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

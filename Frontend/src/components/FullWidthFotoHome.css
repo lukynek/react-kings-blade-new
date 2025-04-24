@@ -1,0 +1,21 @@
+main .foto-full-width{
+    display: flex;
+    overflow: hidden;
+}
+main .foto-full-width img{
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;  
+    object-fit: cover;
+}
+.foto-full-width img:hover {
+    transform: scale(1.015);
+    transform-origin: center;
+}
+@media(width < 992px){
+    main .foto-full-width{
+        display: none;
+    }
+}

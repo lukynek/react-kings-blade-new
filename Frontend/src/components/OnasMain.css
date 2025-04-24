@@ -1,0 +1,61 @@
+.onas-main {
+    display: flex;
+    gap: 20px;
+    padding: 50px 150px;
+    align-items:center;
+}
+
+.onas-text {
+    width: 50%;
+    padding: 0 20px;
+}
+.onas-text p {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.onas-image {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.onas-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media(max-width:1200px) {
+    .onas-main {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 60px;
+    }
+
+    .onas-text {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .onas-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .onas-image img {
+        width: 100%;
+        height: auto;
+    }
+    .onas-text p {
+        margin: 0 0 20px 0; /* nebo libovolná hodnota, která vám vyhovuje */
+        line-height: 1.8;
+    }
+}
+
+@media(max-width:992px) {
+    .onas-main {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+}

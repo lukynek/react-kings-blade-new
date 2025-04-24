@@ -1,0 +1,26 @@
+main .h1-sluzby-gallery-tym {
+    background:var(--dark-bg);
+}
+main .h1-sluzby-gallery-tym h1{
+    color: white;
+    font-weight: 400;
+    font-size: 38px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px;
+}
+@media(width < 992px){
+    main .h1-sluzby-gallery-tym h1{
+        font-size: 36px;
+    }
+}
+@media(width < 768px){
+    main .h1-sluzby-gallery-tym h1{
+        font-size: 34px;
+    }
+}
+@media(width < 576px){
+    main .h1-sluzby-gallery-tym h1{
+        font-size: 28px;
+    }
+}

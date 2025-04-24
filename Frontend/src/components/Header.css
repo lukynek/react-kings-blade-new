@@ -1,0 +1,181 @@
+.header-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    z-index: 100;
+    padding: 0 150px;
+    background:white;
+}
+.topheader{
+    padding: 8px 150px;
+    display: flex;
+    flex-direction: row;
+    background: var(--dark-bg);
+}
+.topheader a {
+    padding: 0 20px;
+    font-size: 14px;
+    text-decoration:underline;
+    color:#ccc;
+}
+.topheader a:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+.topheader a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+.topheader a:first-child{
+    padding-left:0;
+}
+.registr-prihlaseni{
+    text-align: end;
+}
+.header-bar .logo img{
+    width: 100%;
+    max-width: 250px;
+}
+
+.header-bar .logo, .header-bar .navigation, .header-bar .reserve-button{
+    align-items: center;
+    display: flex;
+}
+.header-bar .navigation {
+    display: flex;
+    justify-content: center;
+}
+.header-bar .navigation a {
+    text-decoration:none;
+    color:black;
+    
+    padding:15px 25px;
+}
+.header-bar .reserve-button{
+    display: flex;
+    justify-content: end;
+
+}
+.header-bar .reserve-button button {
+    color:white;
+    padding:12px 30px;
+    font-size:20px;
+    background:var(--button);
+    border-radius:12px;
+    border: none;
+    font-weight:bold;
+    cursor: pointer;
+}
+header .hamburger{
+    display: none;
+}
+
+
+@media(width < 1260px){
+    .header-bar .navigation a{
+        padding: 15px 20px;
+    }
+}
+
+@media(width < 1200px){
+    .header-bar{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .topheader{
+        padding: 8px 60px;
+    }
+    .header-bar .reserve-button button {
+        padding: 12px 25px;
+    }
+}
+@media(width < 992px){
+    .header-bar{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header-bar .logo img{
+        width: 180px;
+    }
+    .header-bar .navigation a{
+        padding: 15px 14px;
+    }
+    .header-bar .reserve-button button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+    .topheader{
+        display: none;
+    }
+}
+
+@media(width < 768px){
+    /*hamburger a menu*/
+    header .hamburger{
+        position: absolute;
+        display: flex;
+        right: 20px;
+    }
+    header .hamburger img {
+        width: 36px;
+    }
+
+    header .header-bar .navigation {
+        position: absolute;
+        top: 90px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background: white;
+        left: 0;
+        align-items: baseline;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+    header .header-bar .navigation.open, .header-bar .reserve-button.open {
+        display: flex;
+        transform: translateX(0);
+    }
+    header .header-bar .navigation a:first-child{
+        border-top:1px solid black;
+    }
+    header .header-bar .navigation a {
+        padding:20px;
+        display:flex;
+        width: 100vw;
+        border-bottom:1px solid black;
+    }
+    header .header-bar .reserve-button{
+        position: absolute;
+        top: 330px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background: #0d0d0d;
+        left: 0;
+        padding:10px 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+    header .header-overlay {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        transition: opacity 0.5s ease;
+        z-index: 5;
+    }
+    
+    header .header-overlay.open {
+        display: flex;
+    } 
+}

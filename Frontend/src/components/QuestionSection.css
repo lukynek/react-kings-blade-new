@@ -1,0 +1,90 @@
+main .otazkysection{
+    padding: 100px 150px 100px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+}
+
+main .otazkysection h2{
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+main .otazkysection p{
+    max-width: 680px;
+    text-align: center;
+}
+main .otazkysection button{
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    background: var(--button);
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+main .otazkysection button a{
+    color: white;
+    text-decoration: none;
+}
+@media(width < 1200px){
+    main .otazkysection{
+        padding: 60px 60px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media(width < 992px){
+    main .otazkysection{
+        padding: 40px 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media(width < 768px){
+
+    header .header-image .overflow {
+        height: calc(85vh - 90px);
+        min-height: 400px;
+    }
+    header .header-image .overflow h1{
+        font-size: 38px;
+    }
+    main .h1-sluzby-gallery-tym h1{
+        font-size: 34px;
+    }
+    main .team-container article{
+        padding-bottom: 20px;
+    }
+    main .team-container .col-12.team-button button{
+        margin-top: 0px;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    main .otazkysection h2{
+        font-size: 32px;
+    }
+}
+@media(width < 576px){
+    header .header-image .overflow h1{
+        font-size: 34px;
+    }
+    main .h1-sluzby-gallery-tym h1{
+        font-size: 28px;
+    }
+    main .text-container article h2, main .team-container h2, main .strih-right-img h2, main .strih-left-img h2{
+        font-size: 26px;
+    }
+    main .otazkysection h2{
+        font-size: 24px;
+    }
+    main .otazkysection button{
+        font-size: 16px;
+    }
+}

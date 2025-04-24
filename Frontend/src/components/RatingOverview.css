@@ -1,0 +1,133 @@
+main .ratingOverview {
+    margin: 50px auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #eaeaea;
+    padding: 20px;
+}
+
+main .ratingOverview h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+main .leftSideRating {
+    padding: 20px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .leftSideRating .stars img {
+    width: 28px;
+    padding-top: 20px;
+}
+
+main .rightSideRating {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .rightSideRating .starC {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3px;
+}
+
+main .rightSideRating .starC .pocet {
+    margin-left: 5px;
+    width: 30px;
+    text-align: right;
+    display: inline-table;
+}
+
+main .rightSideRating .progressBar {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    height: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+main .rightSideRating .progress {
+    height: 100%;
+    background-color: gold;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+main .rightSideRating img {
+    width: 20px;
+}
+
+main .rightSideRating button {
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    background: var(--button);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+main .rightSideRating .addRatingButton {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+main .rightSideRating button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    main .ratingOverview {
+        margin: 60px 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    main .ratingOverview {
+        margin: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main .ratingOverview {
+        flex-direction: column;
+    }
+    main .leftSideRating {
+        padding: 50px 0;
+        aspect-ratio: unset;
+    }
+    main .rightSideRating .addRatingButton {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    main .ratingOverview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .leftSideRating {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    main .rightSideRating {
+        width: 100%;
+    }
+}
