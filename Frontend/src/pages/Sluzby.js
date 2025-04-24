@@ -1,10 +1,25 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import SluzbyItemLeft from "../components/SluzbyItemLeft";
 import SluzbyItemRight from "../components/SluzbyItemRight";
 import QuestionSection from "../components/QuestionSection";
 import sluzbyfoto1 from "../assets/strih_foto_1.png";
 
 const Sluzby = () => {
+    const location = useLocation();
+    useEffect(() => {
+        const hash = location.hash;
+        if (hash) {
+            const el = document.querySelector(hash);
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: "smooth" });
+                }, 0);
+            }
+        }
+    }, [location]);
+    
     const sluzby = [
         {
             id: 1,

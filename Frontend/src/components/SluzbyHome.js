@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import hairImage from '../assets/hair.png';
 import beardImage from '../assets/beard.png';
 import bothImage from '../assets/both.png';
@@ -24,7 +25,7 @@ const SluzbyHome = () => {
         <p>Pánský střih, holení "hot towel", a tradiční oholení břitvou. Procedura je doplněná o hydratační péči, úprava obočí, stříhání klup uší, nos …</p>
       </article>
       <div className="col-12 team-button">
-        <button>Chci vidět všechny služby</button>
+        <button><Link to="/Sluzby#result">Chci vidět všechny služby</Link></button>
       </div>
     </section>
   );

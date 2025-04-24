@@ -60,6 +60,10 @@ main .tym-container .col-12.team-button button {
     font-weight: bold;
     cursor: pointer;
 }
+main .tym-container .col-12.team-button button  a{
+    color: white;
+    text-decoration: none;
+}
 @media(width < 1200px){
     main .tym-container{
         padding-left: 60px;

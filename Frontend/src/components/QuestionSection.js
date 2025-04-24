@@ -8,7 +8,7 @@ const QuestionSection = () =>{
                 Pokud jste nenašli konkrétní požadavek k vašemu střihu, neváhejte a ozvěte se nám. Rádi vám výjdeme vstříc.
             </p>
             <button>
-                <Link to="/Kontakty#kontaktovat">Kontaktovat</Link>
+                <Link to="/Kontakty#result">Kontaktovat</Link>
             </button>
  
         </section>

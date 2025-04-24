@@ -60,7 +60,10 @@ main .list-sluzeb .col-12.team-button button {
     font-weight: bold;
     cursor: pointer;
 }
-
+main .list-sluzeb .col-12.team-button button a {
+    color: white;
+    text-decoration: none;
+}
 @media(width < 1200px){
     main .list-sluzeb{
         padding-left: 60px;
